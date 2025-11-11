@@ -18,8 +18,8 @@ int main()
     camera.projection = CAMERA_PERSPECTIVE;
 
     // Load lighting shader
-    Shader shader = LoadShader(TextFormat("/Users/prasoonrai/Desktop/LearnRaylib/shaders/glsl%i/lighting.vs", GLSL_VERSION),
-                           TextFormat("/Users/prasoonrai/Desktop/LearnRaylib/shaders/glsl%i/lighting.fs", GLSL_VERSION));
+    Shader shader = LoadShader(TextFormat("shaders/glsl%i/lighting.vs", GLSL_VERSION),
+                           TextFormat("shaders/glsl%i/lighting.fs", GLSL_VERSION));
 
     // Create models and assign shader
     Model cube = LoadModelFromMesh(GenMeshCube(2.0f, 4.0f, 2.0f));
